@@ -7,11 +7,13 @@ public class BouclesFor {
 	private Integer fin = null;
 
 	public BouclesFor() {
+
 	}
 
 	public BouclesFor(int debut, int fin) {
 		this.debut = debut;
 		this.fin = fin;
+	
 	}
 
 	public int[] construireTableau() {
@@ -23,19 +25,45 @@ public class BouclesFor {
 	}
 
 	public int[] construireTableauInverse() {
-		return null;
+		
+		int[] tableau = new int[10];
+		int j = 0;
+		
+		for (int i = fin; i>= debut; i--) {
+			tableau[j] = i;
+			j++;
+		}
+		return tableau;
 	}
 
 	public int[] construireTableauEntiersPairs() {
-		return null;
+		
+		int[] tableau = new int[10];
+		int j = 0;
+		for (int i = debut; i <= fin; i++) {
+			if (i % 2 == 0) {
+				tableau[j] = i;
+				j++;
+			}
+		}
+		return tableau;
 	}
 
 	private int[] construireTableauAvecBornes() {
-		return null;
+
+		int[] tableau = new int[10];
+		
+		for (int i = debut; i <= fin; i++) {
+			tableau[i-debut] = i;
+		}
+		return tableau;
 	}
 
 	private int[] construireTableauSansBornes() {
-		return null;
+		
+		int[] tableau = new int[MAX_SUPPORTED];
+		
+		return tableau;
 	}
 
 	public String[] suffixerTableau(String[] tableauEntree, String suffixe) {
