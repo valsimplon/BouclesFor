@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/simplon-promo-pe-1/BouclesFor.svg?branch=master)](https://travis-ci.org/simplon-promo-pe-1/BouclesFor)
+[![Build Status](https://travis-ci.org/valsimplon/BouclesFor.svg?branch=master)](https://travis-ci.org/valsimplon/BouclesFor)
 
 # Exercices pour découvrir la boucle for et ses variantes
 
