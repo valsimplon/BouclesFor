@@ -114,14 +114,31 @@ public class BouclesFor {
 		int[] tableau = new int[tailleTableau];
 		int i = 0;
 		
-		while (i<= tailleTableau) {
-			
+		while (i< tailleTableau) {
+			tableau[i] = ++i;
 		}
-		return null;
+		
+		return tableau;
 	}
 	
 	public int[] construireTableauEntiersPairsAvecWhile() {
-		return null;
+		
+		int tailleTableau = (fin - debut + 1) / 2;
+		
+		int[] tableau = new int[tailleTableau];
+		
+		int index = 0;
+		int valeur = debut;
+		if ((valeur) % 2 != 0)
+			valeur++;
+		
+		while (index < tailleTableau) {
+				tableau[index] = valeur;
+				index++;
+				valeur+=2;
+		}
+		
+		return tableau;
 	}
 
 }
