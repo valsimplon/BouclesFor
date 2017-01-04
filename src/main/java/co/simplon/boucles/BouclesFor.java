@@ -58,6 +58,7 @@ public class BouclesFor {
 		 * 		tableau[index] = debut + index;
 		 * }
 		 */
+		
 		int[] tableau = new int[10];
 		
 		for (int i = debut; i <= fin; i++) {
@@ -92,6 +93,7 @@ public class BouclesFor {
 		if (matrice.length != 0) {
 			for (Integer[] tab : matrice)
 				tailleTableau = tailleTableau + tab.length;
+// 			tailleTableau += tab.length;
 		}
 		
 		Integer[] tableau = new Integer[tailleTableau];	
