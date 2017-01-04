@@ -75,36 +75,32 @@ public class BouclesFor {
 
 	public String[] suffixerTableau(String[] tableauEntree, String suffixe) {
 		
-		String[] tableauSortie = new String[4];
+		String[] tableauSortie = new String[tableauEntree.length];
+		int i = 0;
 		
-		for (int i = 0; i <= 3; i++) {
-			tableauSortie[i] = tableauEntree[i] + suffixe;	
+		for (String valeur : tableauEntree) {
+			tableauSortie[i++] = valeur + suffixe;
 		}
+		
 		return tableauSortie;
 	}
 
 	public Integer[] applanirMatrice(Integer[][] matrice) {
 		
-		int i = 0;
-		int j;
 		int tailleTableau = 0;
 		
 		if (matrice.length != 0) {
-			for (i = 0; i < matrice.length; i++)
-				tailleTableau = tailleTableau + matrice[i].length;
+			for (Integer[] tab : matrice)
+				tailleTableau = tailleTableau + tab.length;
 		}
 		
-		Integer[]tableau = new Integer[tailleTableau];	
-		i = 0;
-		int k = 0;
+		Integer[] tableau = new Integer[tailleTableau];	
 		
 		if (matrice.length != 0) {
-			for (i = 0; i < matrice.length; i++) {
-				j = 0;
-				while (j < matrice[i].length) {
-					tableau[k] = matrice[i][j];
-					j++;
-					k++;
+			int i = 0;
+			for (Integer[] tab : matrice) {
+				for (Integer valeur : tab) {
+					tableau[i++] = valeur;
 				}
 			}
 		}
@@ -113,6 +109,14 @@ public class BouclesFor {
 	}
 
 	public int[] construireTableauAvecWhile() {
+		
+		int tailleTableau = fin - debut + 1;
+		int[] tableau = new int[tailleTableau];
+		int i = 0;
+		
+		while (i<= tailleTableau) {
+			
+		}
 		return null;
 	}
 	
